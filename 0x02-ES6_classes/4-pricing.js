@@ -1,10 +1,10 @@
 /* eslint-disable */
-import Currency from './3-currency'
+import Currency from './3-currency';
 
 export default class Pricing {
   constructor(amount, currency) {
     this._amount = amount;
-    this._currency = currency
+    this._currency = currency;
   }
 
   get amount() {
@@ -24,15 +24,16 @@ export default class Pricing {
 
   set currency(currency) {
     if (!(currency instanceof Currency)) {
-      throw TypeError('currency must be a Currency')
+      throw TypeError('currency must be a Currency');
     }
     this._currency = currency;
   }
 
   displayFullPrice() {
-    return `${this._amount} ${this.currency.displayFullCurrency()}`;
+    return `${this.amount} ${this.currency.displayFullCurrency()}`;
   }
-  static convertPrice(amout, conversionRate) {
+
+  static convertPrice(amount, conversionRate) {
     return amount * conversionRate;
   }
 }
