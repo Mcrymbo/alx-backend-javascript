@@ -1,3 +1,4 @@
+/* eslint-disable */
 import Currency from './3-currency'
 
 export default class Pricing {
@@ -12,7 +13,7 @@ export default class Pricing {
 
   set amount(amount) {
     if (typeof amount !== 'number') {
-      throw TypeError('Amount must be a number');
+      throw TypeError('amount must be a Number');
     }
     this._amount = amount;
   }
