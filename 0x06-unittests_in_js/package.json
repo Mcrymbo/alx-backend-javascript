@@ -1,0 +1,21 @@
+{
+  "name": "0x06-unittests_in_js",
+  "version": "1.0.0",
+  "description": "This is a module for implementing unittest in js",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/mocha/bin/mocha --require babel-register --exit"
+  },
+  "author": "Mcrymbo",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.2",
+    "eslint": "^6.4.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jest": "^22.17.0",
+    "assert": "^2.1.0",
+    "install": "^0.13.0",
+    "mocha": "^10.4.0"
+  }
+}
